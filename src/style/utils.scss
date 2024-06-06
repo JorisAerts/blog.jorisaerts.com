@@ -1,0 +1,25 @@
+@import 'flex';
+@import 'margin';
+
+img {
+
+  &.big {
+    width: 75px;
+    display: inline;
+  }
+
+  &.thumb {
+    width: 25px;
+    display: inline;
+    top: 5px;
+    position: relative
+  }
+
+}
+
+.date_updated {
+  opacity: .5;
+  font-style: italic;
+  font-size: .8rem;
+}
+
