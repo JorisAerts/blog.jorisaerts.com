@@ -3,13 +3,13 @@
 layout: home
 
 hero:
-  name: "Joris Aerts' Blog"
-  # text: "Another Blog"
-  tagline: Welcome to my blog site
-  actions:
-    - theme: brand
-      text: Articles
-      link: /2024/rust-wasm-intro
+    name: "Joris Aerts' Blog"
+    # text: "Another Blog"
+    tagline: Welcome to my blog site
+    actions:
+        -   theme: brand
+            text: Articles
+            link: /overview
 #    - theme: brand
 #      text: Markdown Examples
 #      link: /example/markdown-examples

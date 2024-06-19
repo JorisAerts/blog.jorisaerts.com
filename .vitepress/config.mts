@@ -35,7 +35,7 @@ export default mergeConfig(blogConfig, {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       // {text: 'Home', link: '/'},
-      { text: 'Articles', link: '/2024/rust-wasm-intro' }
+      { text: 'Articles', link: '/overview' }
     ],
 
     socialLinks: [
