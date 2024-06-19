@@ -1,1 +1,3 @@
-export * from './blog'
+export * from './components'
+
+export * from './composables/useBlog'

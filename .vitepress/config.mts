@@ -1,5 +1,5 @@
 import { mergeConfig } from 'vitepress'
-import { defineBlog } from '../src'
+import { defineBlog } from '../src/config'
 
 const blogConfig = defineBlog({
 
@@ -22,7 +22,7 @@ export default mergeConfig(blogConfig, {
 
   themeConfig: {
 
-    siteTitle: "Joris Aerts' Blog",
+    siteTitle: 'Joris Aerts',
 
     //outline: false,
     sidebar: false,
