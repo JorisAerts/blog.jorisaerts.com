@@ -1,0 +1,12 @@
+a.github-link {
+
+  font-size: .8em;
+
+  display: flex;
+  align-items: center;
+  gap: .5em;
+
+  &, &:visited {
+    text-decoration: none;
+  }
+}

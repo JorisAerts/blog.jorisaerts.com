@@ -17,19 +17,13 @@ readingTime: 720
 
 # Creating a web application using Rust and WebAssembly
 
-<script setup>
-import "../../src/style/utils.scss";
-import RustLogoBlack from "/assets/rust-logo.svg";
-import RustLogoWhite from "/assets/rust-logo-white.svg";
+<script setup>import "../../src/style/utils.scss";
 import {useBlog} from "../../src/composables/useBlog";
-import {computed} from "vue"; 
-import {ReadingTime} from "../../src/components";  
-import RustWasmIntroPng from './rust-wasm-intro.png';
+import {GitHubLink, ReadingTime} from "../../src/components"; import RustWasmIntroPng from './rust-wasm-intro.png';
+const {categories} = useBlog();
 
-const {categories, isDark} = useBlog();
-const rustLogo = computed(() => isDark.value ? RustLogoWhite : RustLogoBlack);
+[ReadingTime,GitHubLink, RustWasmIntroPng];
 
-const r = ReadingTime.toString()
 </script>
 
 <img :src="RustWasmIntroPng" class="mt-12" alt="Creating a web application using Rust and WebAssembly">
@@ -163,12 +157,17 @@ Below, you can find the original contents of the files:
 ::: code-group
 
 ```YAML [.yarnrc.yml]
-# vite-plugin-top-level-await wants to access rollup, 
-# but it hasn't declared a dependency upon it.
-# So we have to fix it ourselves.
+# Store the npm packages in .yarn/cache
+enableGlobalCache: false
+
+# Disable telemetry
+enableTelemetry: false
 
 packageExtensions:
-    "vite-plugin-top-level-await@*":
+    # vite-plugin-top-level-await wants to access rollup, 
+    # but it hasn't declared a dependency upon it.
+    # So we have to fix it ourselves.
+    vite-plugin-top-level-await@*:
         dependencies:
             rollup: "*"
 ```
@@ -292,6 +291,7 @@ export default defineConfig({
 ```
 
 :::
+<GitHubLink class="mt-n3" path="rust-wasm-intro--project-setup" />
 
 In our root-project's `package.json`, you can find two scripts which we will be using:
 
@@ -554,6 +554,7 @@ hello()
 ```
 
 :::
+<GitHubLink class="mt-n3" path="rust-wasm-intro--adding-externals" />
 
 The code above illustrates the declaration of an external varargs function.
 Notice the `variadic` keyword in the wasm_bindgen attribute, it defines that the external function has a varargs-signature.
@@ -637,6 +638,7 @@ console.log({TestStruct}) // will log the TestStruct class to the console
 ```
 
 :::
+<GitHubLink class="mt-n3" path="rust-wasm-intro--exporting-an-object" />
 
 As you can see, *wasm_bindgen* exported our `TestStruct` as a class to JavaScript.
 The class has two functions, one static and one instance function.
@@ -694,6 +696,7 @@ console.log(now())
 ```
 
 :::
+<GitHubLink class="mt-n3" path="rust-wasm-intro--using-dates" />
 
 As you can see, now you get the correct timestamp since epoch (*1 Jan 1970*), without any panic involved.
 > **_NOTE:_** As you may have noticed, `Date::now()` returns an `f64` instead of an `u64`.
@@ -760,6 +763,7 @@ createHello()
 ```
 
 :::
+<GitHubLink class="mt-n3" path="rust-wasm-intro--dom-interaction" />
 
 When running the example above, instead of a blank page, you should now notice that a DIV-element has been added,
 containing the text "Hello World":
@@ -821,6 +825,7 @@ console.log(
 ```
 
 :::
+<GitHubLink class="mt-n3" path="rust-wasm-intro--benchmarks" />
 
 In the example above, we've created the exact same function once in Rust and once in TypeScript.
 The script will loop 5 times (+1 warmup) and calculates a Fibonacci sequence.
