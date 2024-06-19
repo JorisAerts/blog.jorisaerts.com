@@ -16,7 +16,7 @@ export const ReadingTime = defineComponent({
       if (data.frontmatter.value.readingTime) return data.frontmatter.value.readingTime
       const span: HTMLSpanElement | undefined = el.value
       if (!span) return '?'
-      const analysis = rt(span.ownerDocument.documentElement.textContent)
+      const analysis = rt(span.ownerDocument.documentElement.innerText)
       return analysis.minutes * 60
     })
 

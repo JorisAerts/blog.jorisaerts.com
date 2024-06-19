@@ -11,8 +11,6 @@ categories:
 permalink: rust-wasm-intro
 editLink: true
 outline: deep
-
-readingTime: 720
 ---
 
 # Creating a web application using Rust and WebAssembly
