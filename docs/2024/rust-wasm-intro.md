@@ -13,18 +13,23 @@ editLink: true
 outline: deep
 ---
 
-# Creating a web application using Rust and WebAssembly
-
-<script setup>import "../../src/style/utils.scss";
+<script setup>
+import "../../src/style/utils.scss";
+import { RustWasmIntroDoodle } from "../../src/components/doodles";
 import {useBlog} from "../../src/composables/useBlog";
-import {GitHubLink, ReadingTime} from "../../src/components"; import RustWasmIntroPng from './rust-wasm-intro.png';
+import {GitHubLink, ReadingTime} from "../../src/components"; 
+import RustWasmIntroPng from './rust-wasm-intro.png';
+import Doodle from '../../src/assets/rust-wasm-intro-doodle.svg';
 const {categories} = useBlog();
 
-[ReadingTime,GitHubLink, RustWasmIntroPng];
+
+[ReadingTime,GitHubLink, RustWasmIntroPng,Doodle,RustWasmIntroDoodle];
 
 </script>
 
-<img :src="RustWasmIntroPng" class="mt-12" alt="Creating a web application using Rust and WebAssembly">
+# Creating a web application using Rust and WebAssembly
+
+<RustWasmIntroDoodle class="mt-12" />
 
 <div class="d-flex date_updated" style="align-items: baseline; gap: .5em;">
 <div>Published: 19 Jun 2024, by Joris Aerts</div>

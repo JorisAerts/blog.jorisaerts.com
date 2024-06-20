@@ -1,0 +1,20 @@
+:root {
+  --doodle-browser-primary: #E3E3E3;
+  --doodle-browser-secondary: #FFFFFF;
+  --doodle-browser-text: #474747;
+
+  --doodle-browser-window-bg: #ffffff;
+  --doodle-browser-window-text: rgb(25, 25, 28);
+}
+
+.dark {
+  --doodle-browser-primary: #242424;
+  --doodle-browser-secondary: #434343;
+  --doodle-browser-text: #e8eaed;
+}
+
+svg.RustWasmIntroDoodle {
+  border-radius: 8px;
+
+  user-select: none;
+}
