@@ -5,12 +5,11 @@ export const useBlog = () => {
   const data = useData()
   const frontmatter = data.frontmatter
 
-  const categories = computed(() =>
-    frontmatter.value.categories.map(cat => '#' + cat
-      .replace(/\W/, '')
-      .toLowerCase()
-    )
-  )
+  const tags = computed(() => {
+    const result = frontmatter.value.tags
+    result.sort()
+    return result
+  })
 
   const permalink = computed(() => frontmatter.value.permalink)
 
@@ -19,14 +18,14 @@ export const useBlog = () => {
 
   // the problem with isDark from vitepress is that it's not working in production
   onMounted(() => isDark.value = getCurrentInstance()
-    .vnode?.el?.ownerDocument
+    ?.vnode?.el?.ownerDocument
     .documentElement?.classList?.contains('dark')
   )
   // if dark mode is toggled by the user, isDark does get triggered
   watch(data.isDark, () => isDark.value = data.isDark.value)
 
   return {
-    categories,
+    tags,
     permalink,
     isDark,
   }

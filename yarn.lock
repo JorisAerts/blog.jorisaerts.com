@@ -1446,7 +1446,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:10.11.0, @vueuse/core@npm:^10.10.0":
+"@vueuse/core@npm:10.11.0, @vueuse/core@npm:^10.10.0, @vueuse/core@npm:^10.11.0":
   version: 10.11.0
   resolution: "@vueuse/core@npm:10.11.0"
   dependencies:
@@ -1693,6 +1693,7 @@ __metadata:
     "@eslint/js": "npm:^9.5.0"
     "@types/node": "npm:^20.14.6"
     "@vitejs/plugin-vue-jsx": "npm:^4.0.0"
+    "@vueuse/core": "npm:^10.11.0"
     eslint: "npm:^9.5.0"
     eslint-plugin-vue: "npm:^9.26.0"
     globals: "npm:^15.6.0"

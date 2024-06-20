@@ -1,18 +1,23 @@
 ---
+title: Overview
 description: An overview of all posts.
 ---
 
-# Overview
+<script setup>
+import {data} from './overview.data.ts';
+import {useUrlSearchParams} from "@vueuse/core";
+import {normalizeTag} from '../src';
 
-<script setup>import {data} from './overview.data.ts';
+const params = useUrlSearchParams('history');
+const nomalizedTag = normalizeTag(params.tag);
 
-data
+[data];
 </script>
 
-<br/>
+# <span v-if="params.tag">Articles about "{{params.tag}}"</span><span v-else>Overview</span>
 
 <ul>
 <template v-for="post in data">
-    <li><a :href="post.link">{{ post.title }}</a></li>
+    <li v-if="!params.tag || post.tags?.map(normalizeTag).includes(nomalizedTag)"><a :href="post.link">{{ post.title }}</a></li>
 </template>
 </ul>
