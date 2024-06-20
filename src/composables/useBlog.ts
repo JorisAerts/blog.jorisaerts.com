@@ -5,12 +5,11 @@ export const useBlog = () => {
   const data = useData()
   const frontmatter = data.frontmatter
 
-  const categories = computed(() =>
-    frontmatter.value.categories.map(cat => '#' + cat
-      .replace(/\W/, '')
-      .toLowerCase()
-    )
-  )
+  const tags = computed(() => {
+    const result = frontmatter.value.tags
+    result.sort()
+    return result
+  })
 
   const permalink = computed(() => frontmatter.value.permalink)
 
@@ -26,7 +25,7 @@ export const useBlog = () => {
   watch(data.isDark, () => isDark.value = data.isDark.value)
 
   return {
-    categories,
+    tags,
     permalink,
     isDark,
   }

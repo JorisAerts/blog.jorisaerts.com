@@ -1,13 +1,16 @@
 ---
 description: An introduction to integrate WebAssembly (WASM) — originating from Rust — within your regular frontend TypeScript or JavaScript code base.
-categories:
-    - rust
+tags:
+    - Rust
     - WebAssembly
-    - wasm
-    - vite
-    - vite.js
-    - node
-    - typescript
+    - WASM
+    - Vite
+    - Vite.js
+    - Node
+    - Node.js
+    - TypeScript
+    - JavaScript
+    - web
 permalink: rust-wasm-intro
 editLink: true
 outline: deep

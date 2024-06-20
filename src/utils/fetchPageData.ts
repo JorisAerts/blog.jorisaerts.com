@@ -18,7 +18,7 @@ export type FetchedMeta = {
   stats: Stats
   title?: string,
   link: string,
-  cats: string[],
+  tags: string[],
   description: string,
   html?: string,
 }
@@ -50,7 +50,7 @@ export const fetchPageData = async (files: string | string[], { render = false }
       stats: statSync(resolve(DOCS_ROOT, mdRel[i])),
       title: c.frontmatter.title ?? extractTitle(c.src),
       link: c.url,
-      cats: c.frontmatter.categories ?? [],
+      tags: c.frontmatter.categories ?? [],
       description: c.frontmatter.description
     })
   )
