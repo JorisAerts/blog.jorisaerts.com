@@ -1,9 +1,8 @@
-import type { PageData, TransformContext, TransformPageContext } from 'vitepress'
+import type { HeadConfig, PageData, TransformContext, TransformPageContext } from 'vitepress'
 import { defineConfig } from 'vitepress'
 import { dirname, resolve } from 'path'
 import { copyFileSync, existsSync, mkdirSync } from 'fs'
 import type { BaseBlogConfig } from './config'
-
 
 export type OpenGraphConfig = {
 
@@ -66,12 +65,12 @@ export const defineOpenGraph = (config: OpenGraphConfig) => {
       const ogData = getOpenGraph(config, pageData, context)
       if (!Object.keys(ogData).length) return
 
-      const head = []
+      const head: HeadConfig[] = []
       for (const d in ogData) {
         if (ogData[d as keyof OpenGraphData]) {
           head.push([
             'meta',
-            { name: `og:${d}`, content: ogData[d as keyof OpenGraphData] }
+            { name: `og:${d}`, content: ogData[d as keyof OpenGraphData] as string }
           ])
         }
       }
