@@ -31,10 +31,10 @@ const {categories} = useBlog();
 
 <RustWasmIntroDoodle class="mt-12" />
 
-<div class="d-flex date_updated" style="align-items: baseline; gap: .5em;">
-<div>Published: 19 Jun 2024, by Joris Aerts</div>
--
-<div>Reading time: <ReadingTime /></div>
+<div class="date_updated">
+<span>Published: 19 Jun 2024, by Joris Aerts</span>
+<span class="mx-2">-</span>
+<span>Reading time: <ReadingTime /></span>
 </div>
 
 [[toc]]
