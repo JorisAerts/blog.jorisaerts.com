@@ -2,6 +2,7 @@ import type { PropType } from 'vue'
 import { computed } from 'vue'
 import { defineComponent } from 'vue'
 import { useData } from 'vitepress'
+import './TagList.scss'
 
 export const TagList = defineComponent({
 
@@ -20,9 +21,9 @@ export const TagList = defineComponent({
         : data.frontmatter.value.tags
     )
 
-    return () => <div>{
+    return () => <div class="tag-list">{
       (tags.value ?? []).map((tag: string) =>
-        <a href={`/overview.html?tag=${tag}`}>{tag}</a>
+        <a class="tag" href={`/overview.html?tag=${tag}`}>{tag}</a>
       )
     }</div>
   }

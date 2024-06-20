@@ -1,4 +1,5 @@
 ---
+title: Overview
 description: An overview of all posts.
 ---
 
@@ -13,7 +14,7 @@ const nomalizedTag = normalizeTag(params.tag);
 [data];
 </script>
 
-# Overview <span v-if="params.tag">for #{{params.tag}}</span>
+# <span v-if="params.tag">Articles about "{{params.tag}}"</span><span v-else>Overview</span>
 
 <ul>
 <template v-for="post in data">

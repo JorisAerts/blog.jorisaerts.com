@@ -4,13 +4,11 @@ tags:
     - Rust
     - WebAssembly
     - WASM
-    - Vite
-    - Vite.js
-    - Node
-    - Node.js
     - TypeScript
     - JavaScript
-    - web
+    - Vite.js
+    - Node.js
+    - Web Development
 permalink: rust-wasm-intro
 editLink: true
 outline: deep
