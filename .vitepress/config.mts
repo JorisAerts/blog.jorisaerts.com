@@ -1,5 +1,6 @@
 import { mergeConfig } from 'vitepress'
 import { defineBlog } from '../src/config'
+import vueJsx from '@vitejs/plugin-vue-jsx' // https://vitejs.dev/config/
 
 const blogConfig = defineBlog({
 
@@ -19,6 +20,9 @@ export default mergeConfig(blogConfig, {
   ignoreDeadLinks: [
     /^https?:\/\/localhost/,
   ],
+
+  // JSX support
+  vite: { plugins: [vueJsx()] },
 
   themeConfig: {
 
