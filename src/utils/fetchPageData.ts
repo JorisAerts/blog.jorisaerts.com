@@ -50,7 +50,7 @@ export const fetchPageData = async (files: string | string[], { render = false }
       stats: statSync(resolve(DOCS_ROOT, mdRel[i])),
       title: c.frontmatter.title ?? extractTitle(c.src),
       link: c.url,
-      tags: c.frontmatter.categories ?? [],
+      tags: c.frontmatter.tags ?? [],
       description: c.frontmatter.description
     })
   )

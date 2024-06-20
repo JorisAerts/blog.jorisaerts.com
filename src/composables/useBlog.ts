@@ -18,7 +18,7 @@ export const useBlog = () => {
 
   // the problem with isDark from vitepress is that it's not working in production
   onMounted(() => isDark.value = getCurrentInstance()
-    .vnode?.el?.ownerDocument
+    ?.vnode?.el?.ownerDocument
     .documentElement?.classList?.contains('dark')
   )
   // if dark mode is toggled by the user, isDark does get triggered

@@ -16,18 +16,15 @@ editLink: true
 outline: deep
 ---
 
-<script setup>
-import "../../src/style/utils.scss";
-import { RustWasmIntroDoodle } from "../../src/components/doodles";
+<script setup>import "../../src/style/utils.scss";
+import {RustWasmIntroDoodle} from "../../src/components/doodles";
 import {useBlog} from "../../src/composables/useBlog";
-import {GitHubLink, ReadingTime} from "../../src/components"; 
-import RustWasmIntroPng from './rust-wasm-intro.png';
+import {GitHubLink, ReadingTime, TagList} from "../../src/components"; import RustWasmIntroPng from './rust-wasm-intro.png';
 import Doodle from '../../src/assets/rust-wasm-intro-doodle.svg';
-const {categories} = useBlog();
 
+const {tags} = useBlog();
 
-[ReadingTime,GitHubLink, RustWasmIntroPng,Doodle,RustWasmIntroDoodle];
-
+[ReadingTime,GitHubLink, RustWasmIntroPng,Doodle,RustWasmIntroDoodle,tags,TagList];
 </script>
 
 # Creating a web application using Rust and WebAssembly
@@ -861,3 +858,5 @@ For example, when you have to process a lot of JSON data that needs to be render
 
 WASM is binary assembler-like code, which renders it as good as unreadable for a mere mortal.
 That too may be a consideration for moving code towards Rust.
+
+<TagList />
