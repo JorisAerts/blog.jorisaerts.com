@@ -28,7 +28,6 @@ export default mergeConfig(blogConfig, {
 
     siteTitle: 'Joris Aerts',
 
-    //outline: false,
     sidebar: false,
     aside: false,
 
@@ -38,12 +37,12 @@ export default mergeConfig(blogConfig, {
 
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      // {text: 'Home', link: '/'},
       { text: 'Articles', link: '/overview' }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/jorisaerts/blog.jorisaerts.com' }
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/whyjoris/' },
+      { icon: 'github', link: 'https://github.com/jorisaerts/blog.jorisaerts.com' },
     ]
   }
 
