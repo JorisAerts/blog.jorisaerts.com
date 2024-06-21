@@ -30,5 +30,5 @@
     "vitepress": "^1.2.3",
     "vue": "^3.4.29"
   },
-  "packageManager": "yarn@4.3.0"
+  "packageManager": "yarn@4.3.1"
 }
