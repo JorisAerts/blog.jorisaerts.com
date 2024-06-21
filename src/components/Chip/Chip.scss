@@ -1,0 +1,23 @@
+.chip {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  margin: .4em;
+  padding: .4em 1em;
+  border-radius: 2em;
+
+  background: var(--vp-badge-info-bg);
+
+  white-space: nowrap;
+}
+
+.chip--close {
+  margin: auto -.3em auto .15em;
+}
+
+
+a.chip,
+a.chip--close {
+  text-decoration: none;
+}
