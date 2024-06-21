@@ -1,12 +1,14 @@
 import { defineConfig } from 'vitepress'
 import type { OpenGraphConfig } from './open-graph'
 import { defineOpenGraph } from './open-graph'
+import type { BaseBlogConfig } from './config.ts'
 
-type BlogConfig = OpenGraphConfig
+type BlogConfig = BaseBlogConfig & OpenGraphConfig
 
 export const defineBlog = (config: BlogConfig) => defineConfig({
 
   ...defineOpenGraph(config),
+
 
   /*
   // Reading time: todo: parse HTML and get innerText

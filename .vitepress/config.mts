@@ -6,6 +6,7 @@ const blogConfig = defineBlog({
 
   // the root of the website; must be known to generate meta-info
   baseUrl: 'https://blog.jorisaerts.com'
+  
 
 })
 
