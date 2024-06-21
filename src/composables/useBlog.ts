@@ -1,5 +1,5 @@
 import { useData } from 'vitepress'
-import { computed, getCurrentInstance, onMounted, ref, triggerRef, watch } from 'vue'
+import { computed, getCurrentInstance, onMounted, ref, watch } from 'vue'
 
 export const useBlog = () => {
   const data = useData()
