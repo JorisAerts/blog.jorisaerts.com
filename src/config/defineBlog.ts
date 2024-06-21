@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 import type { OpenGraphConfig } from './open-graph'
 import { defineOpenGraph } from './open-graph'
-import { fetchPageData } from '../utils/fetchPageData.ts'
 
 type BlogConfig = OpenGraphConfig
 
