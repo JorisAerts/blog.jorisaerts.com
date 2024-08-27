@@ -1,0 +1,59 @@
+name: Yarn Upgrade
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1'
+
+jobs:
+  yarn_dedupe:
+    name: "Yarn upgrade"
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+
+      - name: Yarn set latest version
+        run: |
+          yarn set version latest --yarn-path
+
+      - name: Detect version changes
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "has_upgrade=true" >> $GITHUB_OUTPUT
+
+      - name: Commit changes
+        if: steps.verify_diff.outputs.has_upgrade == 'true'
+        run: |
+          export YARN_VERSION="$(yarn --version)"
+          git config user.name "Joris Aerts"
+          git config user.email "3611758+JorisAerts@users.noreply.github.com"
+          git checkout -B "yarn_upgrade/$YARN_VERSION"
+          git add --al
+          git commit -a -m "Bump Yarn to $YARN_VERSION" --allow-empty
+
+      - name: Detect changes after pull
+        id: verify_branch
+        run: |
+          if [ $(git rev-list --count @{u}..HEAD) -gt 0 ]; then (echo "can_push=true" >> $GITHUB_OUTPUT) fi
+
+      - name: Push changes
+        # if: steps.verify_branch.outputs.can_push == 'true'
+        run: |
+          export YARN_VERSION="$(yarn --version)"
+          git push --set-upstream origin "yarn_upgrade/$YARN_VERSION"
+
+      - name: Create pull request
+        # if: steps.verify_branch.outputs.can_push == 'true'
+        run: |
+          export YARN_VERSION="$(yarn --version)"
+          export UPGRADE_BRANCH="yarn_upgrade/$YARN_VERSION"
+          gh pr create -B main -H "$UPGRADE_BRANCH" --title "Bump Yarn to $YARN_VERSION" --body "Bump Yarn to version $YARN_VERSION" --label "dependencies"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
