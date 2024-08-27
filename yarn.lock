@@ -1696,7 +1696,7 @@ __metadata:
     "@vueuse/core": "npm:^10.11.0"
     eslint: "npm:^9.5.0"
     eslint-plugin-vue: "npm:^9.26.0"
-    globals: "npm:^15.6.0"
+    globals: "npm:^15.9.0"
     reading-time: "npm:^1.5.0"
     sass: "npm:^1.77.6"
     typescript: "npm:^5.5.2"
@@ -2491,10 +2491,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^15.6.0":
-  version: 15.6.0
-  resolution: "globals@npm:15.6.0"
-  checksum: 10/9b522b1eff444acaf331b0da7f072d5ef75b1cde02d89b3656039252f01b6bcda7a9ea42128e8644117c0ede9116249b1bcf830458b7dbe19fafd4de916a3dc0
+"globals@npm:^15.9.0":
+  version: 15.9.0
+  resolution: "globals@npm:15.9.0"
+  checksum: 10/19bca70131c5d3e0d4171deed0f8ae16adda19f18d39b67421056f1eaa160b4433c3ffc8eb69b8b19adebbbdad4834d8a0494c5fe1ae295f0f769a5c0331d794
   languageName: node
   linkType: hard
 
