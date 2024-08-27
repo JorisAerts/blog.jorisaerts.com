@@ -28,7 +28,7 @@
     "typescript": "^5.5.2",
     "typescript-eslint": "^7.13.1",
     "vitepress": "^1.2.3",
-    "vue": "^3.4.29"
+    "vue": "^3.4.38"
   },
   "packageManager": "yarn@4.4.1"
 }
