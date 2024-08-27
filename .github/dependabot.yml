@@ -6,3 +6,28 @@ updates:
     schedule:
       interval: "monthly"
       time: "00:00"
+
+    groups:
+      eslint:
+        patterns:
+          - 'eslint*'
+          - 'globals'
+          - '@eslint/*'
+          - '@typescript-eslint/*'
+          - '@rushstack/eslint-patch'
+          - '@types/eslint'
+          - 'typescript-eslint'
+      stylelint:
+        patterns:
+          - 'stylelint*'
+      vue:
+        patterns:
+          - 'vue*'
+          - '@vue/*'
+      vite:
+        patterns:
+          - 'vite*'
+          - '@vitejs/*'
+      vueuse:
+        patterns:
+          - '@vueuse/*'
