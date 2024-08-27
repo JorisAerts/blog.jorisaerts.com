@@ -16,6 +16,7 @@ updates:
           - '@typescript-eslint/*'
           - '@rushstack/eslint-patch'
           - '@types/eslint'
+          - 'typescript-eslint'
       stylelint:
         patterns:
           - 'stylelint*'
