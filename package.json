@@ -17,11 +17,11 @@
     "@vueuse/core": "^10.11.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.5.0",
+    "@eslint/js": "^9.9.1",
     "@types/node": "^20.14.7",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "eslint": "^9.9.1",
-    "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-vue": "^9.27.0",
     "globals": "^15.9.0",
     "reading-time": "^1.5.0",
     "sass": "^1.77.8",
