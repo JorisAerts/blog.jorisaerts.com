@@ -1080,12 +1080,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.5.1":
-  version: 22.5.1
-  resolution: "@types/node@npm:22.5.1"
+"@types/node@npm:^22.5.5":
+  version: 22.5.5
+  resolution: "@types/node@npm:22.5.5"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/adcec0e8a9ec9112a8cc9529b7d633356c2377fe69ca6e6de4ee39cacb8c86a18a9b7ba658e2456f8ad90d5b76767b268f517b0336c6db787cb056dcdfed107a
+  checksum: 10/172d02c8e6d921699edcf559c28b3805616bd6481af1b3cb0299f89ad9a6f33b71050434c06ce7b503166054a26275344187c443f99f745d0b12601372452f19
   languageName: node
   linkType: hard
 
@@ -1660,7 +1660,7 @@ __metadata:
   resolution: "blog.jorisaerts.com@workspace:."
   dependencies:
     "@eslint/js": "npm:^9.9.1"
-    "@types/node": "npm:^22.5.1"
+    "@types/node": "npm:^22.5.5"
     "@vitejs/plugin-vue-jsx": "npm:^4.0.1"
     "@vueuse/core": "npm:^11.0.3"
     eslint: "npm:^9.9.1"
