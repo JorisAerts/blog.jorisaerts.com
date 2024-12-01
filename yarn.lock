@@ -1889,6 +1889,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/core@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "@vueuse/core@npm:12.0.0"
+  dependencies:
+    "@types/web-bluetooth": "npm:^0.0.20"
+    "@vueuse/metadata": "npm:12.0.0"
+    "@vueuse/shared": "npm:12.0.0"
+    vue: "npm:^3.5.13"
+  checksum: 10/10e9f9fe3f32c50fb1e41754e3c0e9d6534b19c707a9dce6dbbb4a7fc16a668a26d25b476933e10a163df32a913a087009ccb284e10fd07c43d5d49f1e556b75
+  languageName: node
+  linkType: hard
+
 "@vueuse/integrations@npm:^11.1.0":
   version: 11.3.0
   resolution: "@vueuse/integrations@npm:11.3.0"
@@ -1952,6 +1964,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/metadata@npm:12.0.0":
+  version: 12.0.0
+  resolution: "@vueuse/metadata@npm:12.0.0"
+  checksum: 10/34819beb6f1f006a9ac220f4410b55c9bbac94fde258a586387e25224df09992b649cc263dca1e377d8a89bd0de387cb814535a8e4ba618564581afe27aa4891
+  languageName: node
+  linkType: hard
+
 "@vueuse/shared@npm:11.1.0":
   version: 11.1.0
   resolution: "@vueuse/shared@npm:11.1.0"
@@ -1967,6 +1986,15 @@ __metadata:
   dependencies:
     vue-demi: "npm:>=0.14.10"
   checksum: 10/b4463ab36bad4db582f5145ea1c24da22784c5c2a0b2b76d23090daa1a91551c5542b427a04d8c7dbd9cd2c2ebe2db9585021a813688748bfdad89f73a80a962
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:12.0.0":
+  version: 12.0.0
+  resolution: "@vueuse/shared@npm:12.0.0"
+  dependencies:
+    vue: "npm:^3.5.13"
+  checksum: 10/8c75cd07ef6fcc3e6e450399a6db89d988460eadae2ad23cc74f70aff659af158cadcff24fa62d939f24ee1cc9ea69ac0949e0f91a45ff2dea77e1a6e9ff8634
   languageName: node
   linkType: hard
 
@@ -2114,7 +2142,7 @@ __metadata:
     "@eslint/js": "npm:^9.11.1"
     "@types/node": "npm:^22.7.4"
     "@vitejs/plugin-vue-jsx": "npm:^4.1.1"
-    "@vueuse/core": "npm:^11.1.0"
+    "@vueuse/core": "npm:^12.0.0"
     eslint: "npm:^9.11.1"
     eslint-plugin-vue: "npm:^9.28.0"
     globals: "npm:^15.10.0"
@@ -4652,7 +4680,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.5.12":
+"vue@npm:^3.5.12, vue@npm:^3.5.13":
   version: 3.5.13
   resolution: "vue@npm:3.5.13"
   dependencies:
