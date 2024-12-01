@@ -37,11 +37,13 @@ export const fetchPageData = async (files: string | string[], { render = false }
 
   const mds = files.filter(file => !SKIP_LIST.some(rx => rx.test(file)))
   const mdRel = mds.map(f => relative(DOCS_ROOT, f))
-  const content = await createContentLoader(mdRel, {
+  const contentPre = createContentLoader(mdRel, {
     render,
     includeSrc: true,
     globOptions: { absolute: true, cwd: '/' },
-  }).load()
+  })
+
+  const content = await contentPre.load(mds)
 
   const posts = content.map((c, i) =>
     ({
