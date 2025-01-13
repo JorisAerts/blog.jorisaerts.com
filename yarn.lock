@@ -1900,15 +1900,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:^12.2.0":
-  version: 12.2.0
-  resolution: "@vueuse/core@npm:12.2.0"
+"@vueuse/core@npm:^12.4.0":
+  version: 12.4.0
+  resolution: "@vueuse/core@npm:12.4.0"
   dependencies:
     "@types/web-bluetooth": "npm:^0.0.20"
-    "@vueuse/metadata": "npm:12.2.0"
-    "@vueuse/shared": "npm:12.2.0"
+    "@vueuse/metadata": "npm:12.4.0"
+    "@vueuse/shared": "npm:12.4.0"
     vue: "npm:^3.5.13"
-  checksum: 10/93df9f58aae35efd8ffc5de16f28bd8cec61bf388999ea4abcf966ae5fcb3738fefa667f4fa6afba1f0f91a9140125911786e5ab50394e7f5bcefe5fd6d6c4b8
+  checksum: 10/79bb29099aa7e142decee079dc8d57592d42c7e3a6a3e0078bd03c30fccf5ecec32b84c3dce6d38e43213c7747a0581e86891fadffb061c8e651238cb7b6c15f
   languageName: node
   linkType: hard
 
@@ -1968,10 +1968,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:12.2.0":
-  version: 12.2.0
-  resolution: "@vueuse/metadata@npm:12.2.0"
-  checksum: 10/8e9d8cb6299485f8e8f234d93c6e7ae874494297ded6b42c1bbffd8f50caef416112297c4eb349f24da3bfa626c2104567b3f029c8c9aa4ee4eda60f3fac2fb9
+"@vueuse/metadata@npm:12.4.0":
+  version: 12.4.0
+  resolution: "@vueuse/metadata@npm:12.4.0"
+  checksum: 10/df6747b05bab24c04d7f1e42ee509eacb4ea636de9b09cb2a882f7b59d33e98217c45011064dd6d8364c6f144ce2dd5afa2fd0bc80d39afba115785e7cf2f569
   languageName: node
   linkType: hard
 
@@ -1984,12 +1984,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:12.2.0":
-  version: 12.2.0
-  resolution: "@vueuse/shared@npm:12.2.0"
+"@vueuse/shared@npm:12.4.0":
+  version: 12.4.0
+  resolution: "@vueuse/shared@npm:12.4.0"
   dependencies:
     vue: "npm:^3.5.13"
-  checksum: 10/e889c4b13445dacbde131fab7617b46a1b430a9edccf9330924d34732b6d4927b2116438a2b4be69f4a378783ebb7e32633de186deb65463a64b9cd63935f6f3
+  checksum: 10/a06419ea73c58794016e9f3aa168097dd846b3f3d627c505e4746655c056ed61f29ba384f0d8c8ae20ee8875a3d0dff974d0470a5d39dbc044988edf4c2a0641
   languageName: node
   linkType: hard
 
@@ -2158,7 +2158,7 @@ __metadata:
     "@eslint/js": "npm:^9.18.0"
     "@types/node": "npm:^22.10.2"
     "@vitejs/plugin-vue-jsx": "npm:^4.1.1"
-    "@vueuse/core": "npm:^12.2.0"
+    "@vueuse/core": "npm:^12.4.0"
     eslint: "npm:^9.18.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-vue: "npm:^9.32.0"
