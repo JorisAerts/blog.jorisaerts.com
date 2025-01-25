@@ -41,8 +41,8 @@ export default mergeConfig(blogConfig, {
     ],
 
     socialLinks: [
-      { icon: 'linkedin', link: 'https://www.linkedin.com/in/whyjoris/' },
       { icon: 'github', link: 'https://github.com/jorisaerts/blog.jorisaerts.com' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/whyjoris/' },
     ]
   }
 

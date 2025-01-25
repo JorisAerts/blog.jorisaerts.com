@@ -17,22 +17,22 @@
     "@vueuse/core": "^12.5.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.19.0",
-    "@types/node": "^22.10.6",
-    "@vitejs/plugin-vue-jsx": "^4.1.1",
-    "eslint": "^9.19.0",
+    "@eslint/js": "9.19.0",
+    "@types/node": "22.10.10",
+    "@vitejs/plugin-vue-jsx": "4.1.1",
+    "eslint": "9.19.0",
     "eslint-config-prettier": "10.0.1",
-    "eslint-plugin-vue": "^9.32.0",
-    "globals": "^15.14.0",
+    "eslint-plugin-vue": "9.32.0",
+    "globals": "15.14.0",
     "prettier": "3.4.2",
-    "reading-time": "^1.5.0",
-    "sass": "^1.83.4",
+    "reading-time": "1.5.0",
+    "sass": "1.83.4",
     "stylelint": "16.14.0",
     "stylelint-config-prettier": "9.0.5",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.21.0",
-    "vitepress": "^1.6.3",
-    "vue": "^3.5.13"
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.21.0",
+    "vitepress": "1.6.3",
+    "vue": "3.5.13"
   },
   "packageManager": "yarn@4.6.0"
 }
