@@ -2,10 +2,10 @@ name: Yarn Dedupe
 
 on:
   workflow_dispatch:
-  workflow_run:
-    workflows: [ "Pull Request merged" ]
-    types:
-      - completed
+  #workflow_run:
+  #  workflows: [ "Pull Request merged" ]
+  #  types:
+  #    - completed
   #schedule:
   #  - cron: '0 1 * * *'
 

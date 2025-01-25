@@ -14,15 +14,14 @@ editLink: true
 outline: deep
 ---
 
-<script setup>import "../../src/style/utils.scss";
-import {RustWasmIntroDoodle} from "../../src/components/doodles";
-import {useBlog} from "../../src/composables/useBlog";
-import {GitHubLink, ReadingTime, TagList} from "../../src/components"; import RustWasmIntroPng from './rust-wasm-intro.png';
-import Doodle from '../../src/assets/rust-wasm-intro-doodle.svg';
+<script setup>import '../../src/style/utils.scss'
+import {RustWasmIntroDoodle} from '../../src/components/doodles'
+import {useBlog} from '../../src/composables/useBlog'
+import {GitHubLink, ReadingTime, TagList} from '../../src/components' 
+import RustWasmIntroPng from './rust-wasm-intro.png'
+import Doodle from '../../src/assets/rust-wasm-intro-doodle.svg'
 
-const {tags} = useBlog();
-
-[ReadingTime,GitHubLink, RustWasmIntroPng,Doodle,RustWasmIntroDoodle,tags,TagList];
+[ReadingTime,GitHubLink, RustWasmIntroPng,Doodle,RustWasmIntroDoodle,TagList]
 </script>
 
 # Creating a web application using Rust and WebAssembly
@@ -278,7 +277,7 @@ export default defineConfig({
 </html>
 ```
 
-```Rust [packages/app/src/main.ts]
+```TypeScript [packages/app/src/main.ts]
 // Leave empty
 ```
 
