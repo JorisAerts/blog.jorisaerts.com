@@ -29,7 +29,7 @@
     "sass": "1.83.4",
     "stylelint": "16.14.1",
     "stylelint-config-prettier": "9.0.5",
-    "typescript": "5.7.3",
+    "typescript": "5.8.2",
     "typescript-eslint": "8.22.0",
     "vitepress": "1.6.3",
     "vue": "3.5.13"
