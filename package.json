@@ -14,7 +14,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@vueuse/core": "^12.5.0"
+    "@vueuse/core": "^13.1.0"
   },
   "devDependencies": {
     "@eslint/js": "9.23.0",
