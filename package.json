@@ -26,7 +26,7 @@
     "globals": "16.0.0",
     "prettier": "3.5.3",
     "reading-time": "1.5.0",
-    "sass": "1.83.4",
+    "sass": "1.87.0",
     "stylelint": "16.18.0",
     "stylelint-config-prettier": "9.0.5",
     "typescript": "5.8.3",
