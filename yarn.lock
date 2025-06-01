@@ -1667,6 +1667,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/web-bluetooth@npm:^0.0.21":
+  version: 0.0.21
+  resolution: "@types/web-bluetooth@npm:0.0.21"
+  checksum: 10/f8796dc9f67ee556a2c895ee7d6c4f62b2a8c52963c3d5e81a2938d3313130f9f7330ff82a6a3dceb63217ba615020e1d4cca8842d469ba6d8ac782853d47d0d
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:8.29.0":
   version: 8.29.0
   resolution: "@typescript-eslint/eslint-plugin@npm:8.29.0"
@@ -1988,7 +1995,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:12.5.0, @vueuse/core@npm:^12.4.0, @vueuse/core@npm:^12.5.0":
+"@vueuse/core@npm:12.5.0, @vueuse/core@npm:^12.4.0":
   version: 12.5.0
   resolution: "@vueuse/core@npm:12.5.0"
   dependencies:
@@ -1997,6 +2004,19 @@ __metadata:
     "@vueuse/shared": "npm:12.5.0"
     vue: "npm:^3.5.13"
   checksum: 10/c9bfe7f5e33ce57df2a2dea51a3e4c9b094f365e34e97348138f2ed831fb1a6b0af812c5259b7ddab22769f6ca6a6b9d04a357bcabd1d21cd14f22b5eb4b961f
+  languageName: node
+  linkType: hard
+
+"@vueuse/core@npm:^13.3.0":
+  version: 13.3.0
+  resolution: "@vueuse/core@npm:13.3.0"
+  dependencies:
+    "@types/web-bluetooth": "npm:^0.0.21"
+    "@vueuse/metadata": "npm:13.3.0"
+    "@vueuse/shared": "npm:13.3.0"
+  peerDependencies:
+    vue: ^3.5.0
+  checksum: 10/f8d0533edf9b081bedcc2665455972b61ba151e7a637175ab71d6fb2c06b0b901d3b3767dbe3351a50e3430dd9b9a7ed0a7073bf8149177344d591d6f16c70aa
   languageName: node
   linkType: hard
 
@@ -2056,12 +2076,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/metadata@npm:13.3.0":
+  version: 13.3.0
+  resolution: "@vueuse/metadata@npm:13.3.0"
+  checksum: 10/16c57f03d61887bde9293f814233bfcfaaaf44d0f9010d2d3e1d6ff1c329e68e9e16d24ab3c2478643eaa4bc77c6c3b79274a13cb1ac7174667f8bd8f7b5ebc1
+  languageName: node
+  linkType: hard
+
 "@vueuse/shared@npm:12.5.0":
   version: 12.5.0
   resolution: "@vueuse/shared@npm:12.5.0"
   dependencies:
     vue: "npm:^3.5.13"
   checksum: 10/276c2ae6e565dd5762a2b75023d8dfd4551a26abd3ad8c7bd8a5a1f8a64cd3747fc2b46c6914ef78ef9ebd17196b4ec1c70df043aa0b1ab6b630346a39dca150
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:13.3.0":
+  version: 13.3.0
+  resolution: "@vueuse/shared@npm:13.3.0"
+  peerDependencies:
+    vue: ^3.5.0
+  checksum: 10/147d84560a5c3c38b63b31749d5891d7ef46c9d27bfff29ff728217d71dc795a4cf14b3e1b0d3d230540e61570812aac666fa0404867d7f5c5645dfc8b151d4a
   languageName: node
   linkType: hard
 
@@ -2228,7 +2264,7 @@ __metadata:
     "@eslint/js": "npm:9.23.0"
     "@types/node": "npm:22.15.17"
     "@vitejs/plugin-vue-jsx": "npm:4.1.2"
-    "@vueuse/core": "npm:^12.5.0"
+    "@vueuse/core": "npm:^13.3.0"
     eslint: "npm:9.23.0"
     eslint-config-prettier: "npm:10.1.1"
     eslint-plugin-vue: "npm:10.0.0"
