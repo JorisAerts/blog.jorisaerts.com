@@ -2235,7 +2235,7 @@ __metadata:
     globals: "npm:16.0.0"
     prettier: "npm:3.5.3"
     reading-time: "npm:1.5.0"
-    sass: "npm:1.87.0"
+    sass: "npm:1.91.0"
     stylelint: "npm:16.18.0"
     stylelint-config-prettier: "npm:9.0.5"
     typescript: "npm:5.8.3"
@@ -4453,9 +4453,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.87.0":
-  version: 1.87.0
-  resolution: "sass@npm:1.87.0"
+"sass@npm:1.91.0":
+  version: 1.91.0
+  resolution: "sass@npm:1.91.0"
   dependencies:
     "@parcel/watcher": "npm:^2.4.1"
     chokidar: "npm:^4.0.0"
@@ -4466,7 +4466,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 10/43c7d9567baf08619edf46b1419882c5459d456968bb7f220eb92d2cb9c344218dbb93f00c4e76624cfd4f862531d37be731845da6a5b538cf10516746908297
+  checksum: 10/b28751b6e49fa53ac75267119cef33e6f88dcd91173c1f7d61243bb828a5e1793276752562c0bfdd1a7e2d2d7728ddf75f54654d28da8c3cbd3ce94bd051e63e
   languageName: node
   linkType: hard
 
